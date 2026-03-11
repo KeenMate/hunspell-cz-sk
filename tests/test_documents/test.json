@@ -1,0 +1,6 @@
+{
+  "name": "Documents FTS",
+  "description": "Full-text search tests for the documents table using the Czech hunspell configuration",
+  "always_cleanup": true,
+  "isolation": "none"
+}

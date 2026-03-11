@@ -1,0 +1,19 @@
+# Insurance documents (proprietary, not for distribution)
+docs/
+output/
+
+# Database config with credentials
+debee.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Dictionary source files (large, distributed via package/tsearch_data/)
+*.dict
+*.affix
+*.stop
+!package/tsearch_data/*
+
+# PostgreSQL tsearch_data copy
+Postgres16/

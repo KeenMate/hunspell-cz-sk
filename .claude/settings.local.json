@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 list:*)",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(pdftotext:*)",
+      "Bash(grep:*)",
+      "Bash(python:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:azakirov.blogspot.com)",
+      "WebFetch(domain:obartunov.livejournal.com)",
+      "WebFetch(domain:postgrespro.com)",
+      "WebFetch(domain:doxygen.postgresql.org)",
+      "WebFetch(domain:issues.apache.org)",
+      "Bash(PYTHONIOENCODING=utf-8 python3:*)",
+      "Bash(ls:*)",
+      "Bash(sed:*)",
+      "Bash(wc:*)",
+      "Bash(echo === $word ===:*)",
+      "Bash(mv:*)",
+      "Bash(podman compose:*)",
+      "Bash(podman machine:*)",
+      "Bash(podman exec:*)",
+      "Bash(podman ps:*)",
+      "Bash(podman logs:*)",
+      "Bash(MSYS_NO_PATHCONV=1 podman exec:*)",
+      "Bash(bash:*)",
+      "Bash(pip show:*)",
+      "Bash(psql:*)",
+      "Bash(PGPASSWORD='Password3000!!' psql:*)",
+      "Bash(ls /c/Git/KM/hunspell_corrector/package 2>/dev/null; echo \"EXIT: $?\")"
+    ]
+  }
+}
