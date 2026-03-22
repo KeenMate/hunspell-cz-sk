@@ -17,7 +17,8 @@ package/
 │   ├── sk_sk.affix             -- slovenská pravidla přípon/předpon
 │   └── slovak.stop             -- slovenská stop slova (418 slov)
 ├── install_czech_fts.sql       -- CZ: slovníky + konfigurace + unaccent podpora
-└── install_slovak_fts.sql      -- SK: slovníky + konfigurace + unaccent podpora
+├── install_slovak_fts.sql      -- SK: slovníky + konfigurace + unaccent podpora
+└── test_deployment.sql         -- ověření správného nasazení (19 testů)
 ```
 
 ## Instalace
@@ -79,6 +80,16 @@ SELECT to_tsvector('slovak', 'Poistník uzavrel zmluvu')
     @@ to_tsquery('slovak', 'poistník & zmluva');
 -- true
 ```
+
+### Krok 4: Ověření nasazení
+
+Po instalaci spusťte testovací skript, který ověří všechny slovníky, konfigurace a funkce:
+
+```sql
+\i test_deployment.sql
+```
+
+Skript obsahuje 19 testů — kontroluje definice slovníků (template, DictFile, AffFile, StopWords), hunspell stemmování, fallback na simple slovník, stop slova, immutable_unaccent funkci a vyhledávání bez diakritiky.
 
 ## Co balíček vytváří
 

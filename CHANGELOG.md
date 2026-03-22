@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-03-22 — Deployment verification test
+
+- `package/test_deployment.sql` — 19-test suite for verifying dictionary deployment on target databases
+  - Tests 1–6: Dictionary definitions — verifies template, DictFile, AffFile, StopWords for all 6 dictionaries
+  - Tests 7–11: Czech FTS — config exists, hunspell stemming, query matching, fallback to simple, stop words
+  - Tests 12–15: Unaccent — immutable_unaccent function, diacritics removal, config exists, accent-insensitive search
+  - Tests 16–19: Slovak FTS — config exists, hunspell stemming, query matching, unaccent config
+
 ## 2026-03-11 — Standalone dictionary package
 
 ### Package (`package/`)

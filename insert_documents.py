@@ -9,7 +9,7 @@ DOCS_DIR = Path(__file__).parent / "docs" / "cz"
 
 DB_PARAMS = {
     "host": "localhost",
-    "port": 5416,
+    "port": 5417,
     "dbname": "hunspell_test",
     "user": "postgres",
     "password": "Password3000!!",

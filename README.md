@@ -128,6 +128,10 @@ Run with:
 python debee.py -o runTests --test-verbose
 ```
 
+### Deployment verification
+
+`package/test_deployment.sql` — 19 tests to verify dictionaries are properly installed on a target database (dictionary definitions, stemming, fallback, stop words, unaccent). Run directly with psql after deploying the package.
+
 ## Why `immutable_unaccent`?
 
 PostgreSQL's built-in `unaccent()` is declared `STABLE`, but `GENERATED ALWAYS AS` columns require `IMMUTABLE` expressions. Since unaccent rules never change at runtime, we wrap it in an `IMMUTABLE` function to make generated tsvector columns work.

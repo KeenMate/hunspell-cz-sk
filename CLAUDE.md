@@ -17,7 +17,7 @@ Czech hunspell dictionary corrector + PostgreSQL full-text search setup for insu
 
 ### Database & FTS
 - `debee.py` — PostgreSQL migration orchestrator (runs SQL scripts, tests)
-- `debee.env` — Database connection config (localhost:5416, hunspell_test)
+- `debee.env` — Database connection config (localhost:5417, hunspell_test)
 - `000_create_database.sql` — Database creation
 - `001_create_basic_structure.sql` — Schemas (ext, helpers), extensions (unaccent, pg_trgm), version management
 - `050_create_fts.sql` — Czech hunspell text search config (czech_hunspell → czech_simple fallback)

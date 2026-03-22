@@ -43,7 +43,8 @@ AS $$ SELECT unaccent($1); $$;
 
 -- Simple text search config with unaccent filter
 CREATE TEXT SEARCH DICTIONARY czech_unaccent (
-    Template = unaccent
+    Template = unaccent,
+    Rules = 'unaccent'
 );
 
 CREATE TEXT SEARCH CONFIGURATION czech_simple_unaccent (COPY = simple);

@@ -41,7 +41,8 @@ ALTER TEXT SEARCH CONFIGURATION slovak
 -- AS $$ SELECT unaccent($1); $$;
 
 CREATE TEXT SEARCH DICTIONARY slovak_unaccent (
-    Template = unaccent
+    Template = unaccent,
+    Rules = 'unaccent'
 );
 
 CREATE TEXT SEARCH CONFIGURATION slovak_simple_unaccent (COPY = simple);
